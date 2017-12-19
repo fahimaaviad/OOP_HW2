@@ -32,8 +32,22 @@ public class Node<E> {
 		
 	}
 	
-	public getFathers() {
+	// this method is created to return new list,in order to not give the user the reference to the original list 
+	public List<Node<E>> copyArray(List<Node<E>> list) {
+		List<Node<E>> newList = new ArrayList<>();
+		for(Node<E> element: list) {
+			newList.add(element);
+		}
+		return newList;
 		
+	}
+	
+	public List<Node<E>> getFathers() {
+		return copyArray(fathers);
+	}
+	
+	public List<Node<E>> getSons() {
+		return copyArray(sons);
 	}
 	public void addSon (Node<E> son) {
 		sons.add(son);
