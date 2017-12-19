@@ -33,7 +33,7 @@ public class BipartiteGraph<E> {
      */
     public void addBlackNode(E nodeName) {
     	// TODO: Implement this method
-    	nodesList.
+    	nodesList.add(e)
     	List<String> nodeName = new ArrayList<>();
     	
     }

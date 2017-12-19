@@ -7,6 +7,8 @@ import java.util.*;
  */
 public class Node<E> {
 	private E label;
+	private Map<E,Node<E>> fatherz;
+	private Map<E,Node<E>> sonz;
 	private List<Node<E>> fathers;
 	private List<Node<E>> sons;
 	private boolean white; //true when node is white
@@ -25,10 +27,13 @@ public class Node<E> {
 	}
 	
 	public void checkRep() {
-		
+		for(Node<E> element: fathers) {
+			fathers..contains(element);
+		}
 	}
 	public void addFather(Node<E> father) {
 		fathers.add(father);
+		fatherz.put(father.getLabel(), father);
 		
 	}
 	
@@ -41,7 +46,14 @@ public class Node<E> {
 		return newList;
 		
 	}
-	
+	public Map<Node<E>> copyArray(List<Node<E>> list) {
+		List<Node<E>> newList = new ArrayList<>();
+		for(Node<E> element: list) {
+			newList.add(element);
+		}
+		return newList;
+		
+	}
 	public List<Node<E>> getFathers() {
 		return copyArray(fathers);
 	}
