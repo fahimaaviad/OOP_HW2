@@ -1,5 +1,4 @@
 package homework2;
-// this is my comment
 import java.util.*;
 
 /**
@@ -8,7 +7,6 @@ import java.util.*;
  */
 public class BipartiteGraphTestDriver {
 	
-	// THIS IS THE VERSION AVIAD WROTE
 
     private Map<String, BipartiteGraph<String>> graphs;
 
@@ -17,7 +15,7 @@ public class BipartiteGraphTestDriver {
      * @effects Constructs a new test driver.
      */
     public BipartiteGraphTestDriver () {
-    	// TODO: Implement this constructor
+    	// TODO: Implement this constructors
        
        
     }
